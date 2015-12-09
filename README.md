@@ -66,5 +66,5 @@ export ROS_MASTER_URI="http://192.168.1.2:11311"
 
 ### Who do I talk to? ###
 
-* Spottybadrabbit (cyril.lutterodt@mavs.utae.edu)
+* Spottybadrabbit (cyrildotlutterodtatmavsdotutadotedu)
 * Other community or team contact
