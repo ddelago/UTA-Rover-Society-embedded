@@ -30,16 +30,27 @@ sudo usermod -a -G dialout $USERNAME
 
 #Source your bash on remote machine/Master
 * In order to work in an network environment, ROS also requires three more variable for master computer/device:
-source /opt/ros/hydro/setup.bash
+
+```
+#!bash
+source /opt/ros/indigo/setup.bash
 export ROS_MASTER_URI="http://192.168.1.2:11311"
 export ROS_HOSTNAME="192.168.1.2"
 export ROS_IP="192.168.1.2"
-echo "ROS_MASTER_URI --> $ROS_MASTER_URI"
-echo "MASTER IP --> $ROS_IP"
+echo "ROS_MASTER_URI" > $ROS_MASTER_URI
+echo "MASTER IP" > $ROS_IP
+```
+
 
 #Local machine add this export command to your bash 
+
+```
+#!bash
 source ~/.bashrc
 export ROS_MASTER_URI="http://192.168.1.2:11311"
+
+```
+
 
 ### Contribution guidelines ###
 
