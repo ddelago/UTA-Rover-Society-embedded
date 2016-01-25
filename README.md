@@ -36,7 +36,7 @@ sudo usermod -a -G dialout $USERNAME
 source /opt/ros/indigo/setup.bash
 export ROS_MASTER_URI="http://192.168.1.2:11311"
 export ROS_HOSTNAME="192.168.1.2"
-export ROS_IP="192.168.1.2"
+export ROS_IP=`hostname -I`
 echo "ROS_MASTER_URI" > $ROS_MASTER_URI
 echo "MASTER IP" > $ROS_IP
 ```
