@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/odroid/ros_catkin_ws/devel_isolated/rosserial_windows/setup.sh

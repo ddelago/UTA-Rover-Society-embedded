@@ -1,0 +1,58 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1974640537/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1974640537.dir/build.make CMakeFiles/cmTryCompileExec1974640537.dir/build
+make[1]: Entering directory '/home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1974640537.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1974640537.dir/CheckSymbolExists.c.o   -c /home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1974640537
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1974640537.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1974640537.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1974640537 -rdynamic 
+CMakeFiles/cmTryCompileExec1974640537.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0xe): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x12): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec1974640537.dir/build.make:88: recipe for target 'cmTryCompileExec1974640537' failed
+make[1]: *** [cmTryCompileExec1974640537] Error 1
+make[1]: Leaving directory '/home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp'
+Makefile:118: recipe for target 'cmTryCompileExec1974640537/fast' failed
+make: *** [cmTryCompileExec1974640537/fast] Error 2
+
+File /home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1163886952/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1163886952.dir/build.make CMakeFiles/cmTryCompileExec1163886952.dir/build
+make[1]: Entering directory '/home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1163886952.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1163886952.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1163886952
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1163886952.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1163886952.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1163886952 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec1163886952.dir/build.make:88: recipe for target 'cmTryCompileExec1163886952' failed
+make[1]: *** [cmTryCompileExec1163886952] Error 1
+make[1]: Leaving directory '/home/odroid/ros_catkin_ws/build_isolated/roswtf/CMakeFiles/CMakeTmp'
+Makefile:118: recipe for target 'cmTryCompileExec1163886952/fast' failed
+make: *** [cmTryCompileExec1163886952/fast] Error 2
+
+

@@ -1,0 +1,8 @@
+prefix=/home/odroid/ros_catkin_ws/install_isolated
+
+Name: roslib
+Description: Description of roslib
+Version: 1.12.2
+Cflags: -I/home/odroid/ros_catkin_ws/install_isolated/include
+Libs: -L/home/odroid/ros_catkin_ws/install_isolated/lib -lroslib
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/odroid/ros_catkin_ws/install_isolated
+
+Name: geneus
+Description: Description of geneus
+Version: 2.2.1
+Cflags: 
+Libs: -L/home/odroid/ros_catkin_ws/install_isolated/lib 
+Requires: genmsg

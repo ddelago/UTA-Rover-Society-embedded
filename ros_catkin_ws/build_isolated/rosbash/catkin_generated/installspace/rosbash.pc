@@ -1,0 +1,8 @@
+prefix=/home/odroid/ros_catkin_ws/install_isolated
+
+Name: rosbash
+Description: Description of rosbash
+Version: 1.12.2
+Cflags: 
+Libs: -L/home/odroid/ros_catkin_ws/install_isolated/lib 
+Requires: 

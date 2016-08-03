@@ -1,0 +1,8 @@
+prefix=/home/odroid/ros_catkin_ws/install_isolated
+
+Name: genpy
+Description: Description of genpy
+Version: 0.5.4
+Cflags: 
+Libs: -L/home/odroid/ros_catkin_ws/install_isolated/lib 
+Requires: genmsg
