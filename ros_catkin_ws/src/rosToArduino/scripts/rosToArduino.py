@@ -8,10 +8,20 @@ from geometry_msgs.msg import Twist
 #Maybe add Global String For Serial? Have Functions add to string then write after all functions finish?
 def Drive(msg):
 
-    linear = int(100*(float(msg.linear.x)))
-    angular = int(100*(float(msg.angular.z)))
-    output = "D" + str(linear) + "," + str(angular)   
-    ser.write(output.encode())
+	linear = round(10*(msg.linear.x))
+	angular = round(10*(msg.angular.z))
+	if(linear >= 0):
+		linear_out = "+" + str(linear)
+	elif(linear < 0):
+		linear_out = "-" + str(linear)
+
+	if(angular >= 0):
+		angular_out = "+" + str(angular)
+	elif(angular < 0):
+		angular_out = "-" + str(angular)
+
+	output = "D" + linear_out + "," + angular_out
+	ser.write(output.encode())
 
 def listener():
 
